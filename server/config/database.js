@@ -1,6 +1,6 @@
-// require('dotenv').config();
+require('dotenv').config();
 
-// console.log(process.env.DB_FILE);
+// console.log(DB_FILE);
 
 module.exports = {
   development: {

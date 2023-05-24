@@ -4,7 +4,7 @@ function envDBTestFile(dbTestFile) {
   return {
     env: {
       ...process.env,
-      DB_TEST_FILE: dbTestFile || process.env.DB_TEST_FILE
+      DB_TEST_FILE: dbTestFile || 'test/test.db'
     }
   };
 };
