@@ -1,6 +1,10 @@
+// require('dotenv').config();
+
+// console.log(process.env.DB_FILE);
+
 module.exports = {
   development: {
-    storage: process.env.DB_FILE,
+    storage: 'db/dev.db',
     dialect: "sqlite",
     seederStorage: "sequelize",
     benchmark: true,
@@ -9,7 +13,7 @@ module.exports = {
     // logging: false
   },
   test: {
-    storage: process.env.DB_TEST_FILE,
+    storage: 'test/test.db',
     dialect: "sqlite",
     seederStorage: "sequelize",
     // logging: false
